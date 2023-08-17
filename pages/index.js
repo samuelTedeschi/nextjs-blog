@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, {siteTitle} from "../components/layout";
+import Layout, { siteTitle } from "../components/layout";
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 
@@ -13,9 +13,9 @@ export default function Home({ allPostsData }) {
         </title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Blog</p>
+        <p>Novidade sobre Tecnologis</p>
         <p>
-        (Blog onde irei colocar as novidades da semana e tutoriais{' '}
+          (Blog onde irei colocar as novidades da semana e tutoriais{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
