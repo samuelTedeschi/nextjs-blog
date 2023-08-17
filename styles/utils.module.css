@@ -45,6 +45,13 @@
   
 .listItem {
     margin: 0 0 1.25rem;
+    border: solid 1px whitesmoke;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px gainsboro;
+}
+
+.listItemPadding{
+    padding: 4px;
 }
   
 .lightText {
