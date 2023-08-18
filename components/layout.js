@@ -5,8 +5,11 @@ import Link from 'next/link';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
+import Voltar from './voltar';
+import Redes from './redes';
+
 const name = 'Samuel Tedechi';
-export const siteTitle = 'Simples Blog Next.js'
+export const siteTitle = 'Samuel Tedeschi Blog'
 
 export default function Layout({ children, home }) {
   return (
@@ -15,7 +18,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Aprendendo a contruir um blog com Next.js"
+          content="Noticias e conteudos sobre tecnologias"
         />
         <meta
           property="og:image"
@@ -38,6 +41,7 @@ export default function Layout({ children, home }) {
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Redes/>
           </div>
         ) : (
           <div>
@@ -54,6 +58,7 @@ export default function Layout({ children, home }) {
             <h2 className={utilStyles.headingLg}>
               <Link href='/' className={utilStyles.colorInherit}>{name}</Link>
             </h2>
+            <Redes/>
           </div>
         )}
       </header>
@@ -61,9 +66,7 @@ export default function Layout({ children, home }) {
         {children}
       </main>
       {!home && (
-        <div className={styles.blackToHome}>
-          <Link href='/'>Voltar</Link>
-        </div>
+        <Voltar/>
       )}
     </div>
   )

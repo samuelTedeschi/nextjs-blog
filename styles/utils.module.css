@@ -48,6 +48,10 @@
     border: solid 1px whitesmoke;
     border-radius: 4px;
     box-shadow: 1px 1px 5px gainsboro;
+    
+}
+.listItem:hover{
+    box-shadow: 4px 4px 8px gainsboro;
 }
 
 .listItemPadding{
@@ -56,4 +60,10 @@
   
 .lightText {
     color: #666;
+}
+
+.redes{
+    display: block;
+    margin: auto;
+    width: 100%;
 }
