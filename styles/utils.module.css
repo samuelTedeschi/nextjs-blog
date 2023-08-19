@@ -47,11 +47,11 @@
     margin: 0 0 1.25rem;
     border: solid 1px whitesmoke;
     border-radius: 4px;
-    box-shadow: 1px 1px 5px gainsboro;
+    box-shadow: 1px 1px 5px #E4E6C3;
     
 }
 .listItem:hover{
-    box-shadow: 4px 4px 8px gainsboro;
+    box-shadow: 4px 4px 8px #D8DCD0;
 }
 
 .listItemPadding{
@@ -62,8 +62,20 @@
     color: #666;
 }
 
-.redes{
-    display: block;
-    margin: auto;
-    width: 100%;
+.conectar{
+    display: flex;
+    align-items: center;
+}
+
+.conectarP{
+    font-size: small;
+    font-weight: 600;
+}
+
+.icons{
+    display:flex; 
+}
+
+.itemsIcons{
+    padding: 4px;   
 }

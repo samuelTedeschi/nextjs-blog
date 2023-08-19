@@ -6,7 +6,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
 import Voltar from './voltar';
-import Redes from './redes';
+import Footer from './conectar';
 
 const name = 'Samuel Tedechi';
 export const siteTitle = 'Samuel Tedeschi Blog'
@@ -41,7 +41,6 @@ export default function Layout({ children, home }) {
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <Redes/>
           </div>
         ) : (
           <div>
@@ -58,9 +57,9 @@ export default function Layout({ children, home }) {
             <h2 className={utilStyles.headingLg}>
               <Link href='/' className={utilStyles.colorInherit}>{name}</Link>
             </h2>
-            <Redes/>
           </div>
         )}
+        <Footer/>
       </header>
       <main>
         {children}

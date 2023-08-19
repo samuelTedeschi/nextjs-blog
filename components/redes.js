@@ -1,13 +1,27 @@
-import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
-import {BsDiscord, BsPersonCircle} from 'react-icons/bs'
+import Link from 'next/link'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { BsDiscord } from 'react-icons/bs'
 
-export default function Redes(){
-    return(
-        <div>
-            <AiFillGithub/>
-            <AiFillLinkedin/>
-            <BsDiscord/>
-            <BsPersonCircle/>
+import utilStyles from '../styles/utils.module.css';
+
+export default function Redes() {
+    return (
+        <div className={utilStyles.icons}>
+            <div className={utilStyles.itemsIcons}>
+                <Link href="https://github.com/samuelTedeschi">
+                    <AiFillGithub />
+                </Link>
+            </div>
+            <div className={utilStyles.itemsIcons}>
+                <Link href="">
+                    <AiFillLinkedin />
+                </Link>
+            </div>
+            <div className={utilStyles.itemsIcons}>
+                <Link href="">
+                    <BsDiscord />
+                </Link>
+            </div>
         </div>
     )
 }

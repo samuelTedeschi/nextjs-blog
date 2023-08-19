@@ -23,19 +23,20 @@ export default function Home({ allPostsData }) {
         <h2 className={utilStyles.headingLg}>Posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={ `${utilStyles.listItem} ${utilStyles.listItemPadding}`} key={id}>
+            <li className={`${utilStyles.listItem} ${utilStyles.listItemPadding}`} key={id}>
               <Link href={`/posts/${id}`}>
-              {title}
+                {title}
               </Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date}/>
+                <Date dateString={date} />
               </small>
             </li>
           ))}
         </ul>
       </section>
-
+      <div>
+      </div>
     </Layout>
   )
 }
