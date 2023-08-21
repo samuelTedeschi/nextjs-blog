@@ -8,12 +8,12 @@ export default function Redes() {
     return (
         <div className={utilStyles.icons}>
             <div className={utilStyles.itemsIcons}>
-                <Link href="https://github.com/samuelTedeschi">
+                <Link href="https://github.com/samuelTedeschi" >
                     <AiFillGithub />
                 </Link>
             </div>
             <div className={utilStyles.itemsIcons}>
-                <Link href="">
+                <Link href="https://www.linkedin.com/in/samuel-tedeschi/">
                     <AiFillLinkedin />
                 </Link>
             </div>
