@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date'
 import Link from 'next/link'
+import Alert from "../components/alert";
 
 
 export default function Home({ allPostsData }) {
