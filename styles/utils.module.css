@@ -47,11 +47,11 @@
     margin: 0 0 1.25rem;
     border: solid 1px whitesmoke;
     border-radius: 4px;
-    box-shadow: 1px 1px 5px #E4E6C3;
+    box-shadow: 1px 1px 5px #CCC5B9;
     
 }
 .listItem:hover{
-    box-shadow: 4px 4px 8px #D8DCD0;
+    box-shadow: 4px 4px 8px #403D39;
 }
 
 .listItemPadding{
@@ -78,4 +78,13 @@
 
 .itemsIcons{
     padding: 4px;   
+}
+
+.titlePosts{
+    color: #EB5E28;
+}
+
+.sobre{
+    color: #252422;
+    font-weight: 600;
 }

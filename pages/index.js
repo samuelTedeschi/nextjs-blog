@@ -15,13 +15,13 @@ export default function Home({ allPostsData }) {
           {siteTitle}
         </title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Ola! Eu sou o Samuel e sou front end developer</p>
-        <p>Nesse Blog eu vou postar informaçoes sobre tecnologias e produtividade. Tenha uma boa leitura!</p>
+      <section className={utilStyles.sobre}>
+        <p>Saldaçao eu me chamo Samuel e sou programador Front-end. Se quiser entrar em contato comigo e so me seguir nas redes sociais acima.</p>
+        <p>Seja bem-vindo. No blog eu vou postar diariamente informaçoes sobre tecnologias e produtividade. Tenha uma boa leitura!</p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Posts</h2>
+        <h2 className={utilStyles.titlePosts}>Posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={`${utilStyles.listItem} ${utilStyles.listItemPadding}`} key={id}>
